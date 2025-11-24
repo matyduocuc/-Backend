@@ -6,7 +6,7 @@ import com.example.Gestion.de.prestamos.domain.model.Multa;
 import com.example.Gestion.de.prestamos.domain.model.Prestamo;
 import com.example.Gestion.de.prestamos.domain.repository.MultaRepository;
 import com.example.Gestion.de.prestamos.domain.repository.PrestamoRepository;
-import jakarta.transaction.Transactional;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.stereotype.Service;
 
 import java.time.Instant;

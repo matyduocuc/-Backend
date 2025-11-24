@@ -68,7 +68,7 @@ VITE_STUDENTS_API_URL=http://localhost:8080/api/v1/student
 1. **Base de datos MySQL**: Asegúrate de tener las bases de datos creadas:
    - `biblioteca_catalogo` (para Libros)
    - `biblioteca_usuarios` (para Usuarios)
-   - `ms_prestamos` (para Préstamos)
+   - `biblioteca_prestamos` (para Préstamos)
 
 2. **Iniciar Microservicios** (en orden):
    ```bash

@@ -20,8 +20,8 @@ public interface NotificacionRepository extends JpaRepository<Notificacion, Long
     List<Notificacion> findByUsuarioIdAndEstado(Long usuarioId, EstadoNotificacion estado);
     List<Notificacion> findByFechaCreacionBetween(LocalDateTime inicio, LocalDateTime fin);
     
-    @Query("SELECT n FROM Notificacion n WHERE n.estado = 'PENDIENTE' AND n.intentosEnvio < 3")
-    List<Notificacion> findPendientesConReintentos();
+    @Query("SELECT n FROM Notificacion n WHERE n.estado = :estado AND n.intentosEnvio < 3")
+    List<Notificacion> findPendientesConReintentos(@Param("estado") EstadoNotificacion estado);
     
     Long countByUsuarioIdAndEstado(Long usuarioId, EstadoNotificacion estado);
     

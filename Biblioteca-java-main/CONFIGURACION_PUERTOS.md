@@ -58,7 +58,7 @@ const REPORTS_API_URL = 'http://localhost:8085/api/informes';
 1. **Base de datos MySQL**: Asegúrate de tener las bases de datos creadas:
    - `biblioteca_catalogo` (para Libros)
    - `biblioteca_usuarios` (para Usuarios)
-   - `ms_prestamos` (para Préstamos)
+   - `biblioteca_prestamos` (para Préstamos)
    - `biblioteca_notificaciones` (para Notificaciones)
 
 2. **Iniciar Microservicios** (en orden):

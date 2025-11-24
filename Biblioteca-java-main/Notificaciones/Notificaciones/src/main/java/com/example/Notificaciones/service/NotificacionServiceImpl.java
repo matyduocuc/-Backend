@@ -100,7 +100,7 @@ public class NotificacionServiceImpl implements NotificacionService {
     @Override
     @Transactional
     public List<NotificacionDTO> procesarNotificacionesPendientes() {
-        List<Notificacion> notificacionesPendientes = notificacionRepository.findPendientesConReintentos();
+        List<Notificacion> notificacionesPendientes = notificacionRepository.findPendientesConReintentos(EstadoNotificacion.PENDIENTE);
         
         return notificacionesPendientes.stream()
                 .map(this::procesarNotificacion)
